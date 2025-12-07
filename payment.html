@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Checkout – BloomFresh Flowers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{margin:0;font-family:Arial;background:#ffe6f2;color:#444;}
+header{background:#ff69b4;padding:20px;display:flex;justify-content:space-between;align-items:center;}
+header h1{color:white;margin:0;}
+nav a{color:white;margin:0 15px;text-decoration:none;}
+
+.container{max-width:600px;margin:auto;padding:50px 20px;}
+input,select{width:100%;padding:15px;margin:10px 0;border:none;border-radius:8px;}
+button{width:100%;padding:15px;background:#ff69b4;color:white;font-size:20px;border:none;border-radius:10px;margin-top:20px;cursor:pointer;}
+footer{background:#ff69b4;padding:20px;text-align:center;color:white;margin-top:100px;}
+</style>
+</head>
+
+<body>
+<header>
+  <h1>BloomFresh</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="product.html">Bouquets</a>
+    <a href="payment.html">Checkout</a>
+  </nav>
+</header>
+
+<div class="container">
+  <h2 style="text-align:center;font-size:35px;">Complete Your Flower Order</h2>
+
+  <label>Full Name</label>
+  <input type="text" placeholder="Enter Your Name">
+
+  <label>Email</label>
+  <input type="email" placeholder="Enter Email">
+
+  <label>Select Bouquet</label>
+  <select>
+    <option>Pink Love Bouquet</option>
+    <option>Rose Garden Classic</option>
+    <option>Spring Mix Bouquet</option>
+    <option>Yellow Sunshine</option>
+    <option>Wedding Premium Bouquet</option>
+  </select>
+
+  <label>Payment Method</label>
+  <select>
+    <option>UPI</option>
+    <option>Credit Card</option>
+    <option>Debit Card</option>
+  </select>
+
+  <button onclick="window.location='thankyou.html'">Place Order</button>
+</div>
+
+<footer>
+  © 2025 BloomFresh Flowers
+</footer>
+</body>
+</html>
