@@ -2,15 +2,6 @@
 <html lang="en">
 <head>
   
-  <!-- Google tag (gtag.js) -->
-<!--script async src="https://www.googletagmanager.com/gtag/js?id=G-7GNCDRE752"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7GNCDRE752');
-</script>
   <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -18,7 +9,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-WWNV79R6');</script>
 <!-- End Google Tag Manager -->
-  
 <meta charset="UTF-8">
 <title>Checkout – BloomFresh Flowers</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -51,31 +41,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class="container">
   <h2 style="text-align:center;font-size:35px;">Complete Your Flower Order</h2>
-<form action="/thankyou.html" method="POST">
-  <label>Full Name</label>
-  <input type="text" placeholder="Enter Your Name">
 
-  <label>Email</label>
-  <input type="email" placeholder="Enter Email">
+  <!-- 🌸 FORM START -->
+  <form action="thankyou.html" method="get">
 
-  <label>Select Bouquet</label>
-  <select>
-    <option>Pink Love Bouquet</option>
-    <option>Rose Garden Classic</option>
-    <option>Spring Mix Bouquet</option>
-    <option>Yellow Sunshine</option>
-    <option>Wedding Premium Bouquet</option>
-  </select>
+    <label>Full Name</label>
+    <input type="text" name="fullname" placeholder="Enter Your Name" required>
 
-  <label>Payment Method</label>
-  <select>
-    <option>UPI</option>
-    <option>Credit Card</option>
-    <option>Debit Card</option>
-  </select>
+    <label>Email</label>
+    <input type="email" name="email" placeholder="Enter Email" required>
 
-  <button onclick="window.location='thankyou.html'">Place Order</button>
-</form>
+    <label>Select Bouquet</label>
+    <select name="bouquet">
+      <option>Pink Love Bouquet</option>
+      <option>Rose Garden Classic</option>
+      <option>Spring Mix Bouquet</option>
+      <option>Yellow Sunshine</option>
+      <option>Wedding Premium Bouquet</option>
+    </select>
+
+    <label>Payment Method</label>
+    <select name="payment">
+      <option>UPI</option>
+      <option>Credit Card</option>
+      <option>Debit Card</option>
+    </select>
+
+    <button type="submit">Place Order</button>
+
+  </form>
+  <!-- 🌸 FORM END -->
+
 </div>
 
 <footer>
